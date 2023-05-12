@@ -23,11 +23,14 @@
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "tiny-invariant": "^1.1.0",
-    "toformat": "^2.0.0"
+    "toformat": "^2.0.0",
+    "tsconfig": "workspace:*"
   },
   "devDependencies": {
     "@types/big.js": "^4.0.5",
-    "@types/jest": "^24.0.25"
+    "@types/jest": "^24.0.25",
+    "jsbi": "^3.1.4",
+    "typescript": "^4.9.3"
   },
   "installConfig": {
     "hoistingLimits": "none"
