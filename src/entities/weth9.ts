@@ -3,7 +3,7 @@ import { Token } from './token'
 /**
  * Known WETH9 implementation addresses, used in our implementation of Ether#wrapped
  */
-export const WETH9: { [chainId: number]: Token } = {
+export const WETH9 = {
   [1]: new Token(1, '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 18, 'WETH', 'Wrapped Ether'),
   [3]: new Token(3, '0xc778417E063141139Fce010982780140Aa0cD5Ab', 18, 'WETH', 'Wrapped Ether'),
   [4]: new Token(4, '0xc778417E063141139Fce010982780140Aa0cD5Ab', 18, 'WETH', 'Wrapped Ether'),
@@ -21,6 +21,10 @@ export const WETH9: { [chainId: number]: Token } = {
   [8453]: new Token(8453, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
 
   [56]: new Token(56, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
+  [97]: new Token(97, '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', 18, 'WBNB', 'Wrapped BNB'),
   [137]: new Token(137, '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', 18, 'WMATIC', 'Wrapped MATIC'),
   [43114]: new Token(43114, '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', 18, 'WAVAX', 'Wrapped AVAX')
 }
+
+export type WETHSupportedChainId = keyof typeof WETH9
+export const WETHSupportedChainIds = Object.keys(WETH9).map(key => parseInt(key))
