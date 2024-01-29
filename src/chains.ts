@@ -1,4 +1,5 @@
 export enum ChainId {
+  ETHEREUM = 1,
   MAINNET = 1,
   GOERLI = 5,
   SEPOLIA = 11155111,
@@ -15,9 +16,16 @@ export enum ChainId {
   GNOSIS = 100,
   MOONBEAM = 1284,
   BNB = 56,
+  BSC = 56,
+  BSC_TESTNET = 97,
   AVALANCHE = 43114,
   BASE_GOERLI = 84531,
-  BASE = 8453
+  BASE = 8453,
+  ZKSYNC_TESTNET = 280,
+  ZKSYNC = 324,
+  POLYGON_ZKEVM = 1101,
+  POLYGON_ZKEVM_TESTNET = 1442,
+  LINEA_TESTNET = 59140
 }
 
 export const SUPPORTED_CHAINS = [
